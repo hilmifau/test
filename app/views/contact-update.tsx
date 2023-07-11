@@ -68,7 +68,7 @@ export const ContactUpdate = (props: any) => {
         if (type === 'capture') {
           launchCamera(options, (res) => {
             if (res.didCancel) {
-              console.log('cancelled');
+              console.log('user cancelled');
             } else if (res.errorCode) {
               console.log(res.errorMessage);
             } else {
